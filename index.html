@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Harvey</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ----------- NAVBAR ------------ -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container rounded-4">
+        <a class="navbar-brand" href="#">
+          <img src="./img/coffee-cup.png" width="100px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------- Carousel ----------- -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="hero">
+              <em> Welcome to cafeharvey.com</em>
+              <h1 class="display-1 fw-bolder">Cafe Harvey</h1>
+              <p class="fs-5">your favourite coffee daily lives.</p>
+              <div class="btn-container">
+                <button class="btn me-3 rounded-pill">Our Story</button>
+                <button class="btn rounded-pill">Check Menu</button>
+              </div>
+            </div>
+            <div class="black rounded-5"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="hero">
+              <em> Welcome to cafeharvey.com</em>
+              <h1 class="display-1 fw-bolder">Cafe Harvey</h1>
+              <p class="fs-5">your favourite coffee daily lives.</p>
+              <div class="btn-container">
+                <button class="btn me-3 rounded-pill">Our Story</button>
+                <button class="btn rounded-pill">Check Menu</button>
+              </div>
+            </div>
+            <div class="black rounded-5"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="hero">
+              <em> Welcome to cafeharvey.com</em>
+              <h1 class="display-1 fw-bolder">Cafe Harvey</h1>
+              <p class="fs-5">your favourite coffee daily lives.</p>
+              <div class="btn-container">
+                <button class="btn me-3 rounded-pill">Our Story</button>
+                <button class="btn rounded-pill">Check Menu</button>
+              </div>
+            </div>
+            <div class="black rounded-5"></div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ------------ About ------------ -->
+
+    <section id="about" class="py-5">
+      <h1 class="text-white text-center py-5">ABOUT US</h1>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <div class="img-container overflow-hidden rounded-5">
+              <img src="img/about.jpg" alt="" />
+              <div
+                class="about-info d-flex flex-column justify-content-end text-white p-4"
+              >
+                <h4 class="fs-3 fw-bolder">We start since 2019</h4>
+                <h4 class="fs-4">Best in Dublin</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-white">
+            <em class="pt-5">cafeharvey.com</em>
+            <h2 class="fs-4 mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              explicabo id asperiores optio est ipsum!
+            </h2>
+            <p class="fs-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+              dolorum ut provident perspiciatis labore voluptas accusantium
+              sunt. Placeat doloremque molestias a maxime fugiat eligendi minus
+              reprehenderit, deleniti fugit. Ipsum repellat consectetur enim
+              numquam nisi perferendis!
+            </p>
+            <button class="btn">Meet Harvey</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="people" class="py-5">
+      <!-- --------- MEET PEOPLE --------- -->
+    </section>
+    <section id="people" class="py-5">
+      <div class="people-header text-center">
+        <em>Creative Barista</em>
+        <h2>MEET PEOPLE</h2>
+      </div>
+      <div class="container">
+        <div class="row py-5 row-gap-3 justify-content-center">
+          <div class="col-12 col-sm-6 col m-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="img/team/our-team-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Aragorn</h5>
+                <h6>Menager</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+
+                <div class="fs-4 d-flex justify-content-evenly">
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col m-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="img/team/our-team-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Arondir</h5>
+                <h6>Menager</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+
+                <div class="fs-4 d-flex justify-content-evenly">
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col m-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="img/team/our-team-3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Arwen</h5>
+                <h6>Menager</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+
+                <div class="fs-4 d-flex justify-content-evenly">
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col m-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="img/team/our-team-4.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bilbo</h5>
+                <h6>Menager</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+
+                <div class="fs-4 d-flex justify-content-evenly">
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col m-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="img/team/our-team-5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bronwyn</h5>
+                <h6>Menager</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+
+                <div class="fs-4 d-flex justify-content-evenly">
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col m-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="img/team/our-team-6.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Legolas</h5>
+                <h6>Menager</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+
+                <div class="fs-4 d-flex justify-content-evenly">
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-tiktok"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- OUR MENU ----------- -->
+    <section id="menu" class="py-5">
+      <div class="menu-header text-center">
+        <h2 class="py-5">OUR MENU</h2>
+      </div>
+      <div class="container py-5 rounded-3">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-coffe"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Coffe
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Food
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Desert
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-coffe"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="row row-gap-3">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/coffee/1_dalgona.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/coffee/1_dalgona.webp"
+                    alt="Dalgona"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Dalgona</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/coffee/2_turkısh.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/coffee/2_turkısh.webp"
+                    alt="Turkhis"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Turkish</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/coffee/3_latte.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/coffee/3_latte.webp"
+                    alt="Latte"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Latte</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/coffee/4_magic.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/coffee/4_magic.webp"
+                    alt="Magic"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Magic</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="row row-gap-3">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/food/1_steak.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/food/1_steak.webp"
+                    alt="Dalgona"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Steak</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/food/2_italian.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/food/2_italian.webp"
+                    alt="Turkhis"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Burger</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="./img/menu/food/3_summer-squash-pizza.webp"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/food/3_summer-squash-pizza.webp"
+                    alt="Latte"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Squash Pizza</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/food/4_peanut-butter.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/food/4_peanut-butter.webp"
+                    alt="Magic"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Peaunt Butter</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <div class="row row-gap-3">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/dessert/1_corn-cake.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/dessert/1_corn-cake.webp"
+                    alt="Dalgona"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Corn cake</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/menu/dessert/2_gigerbread.webp">
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/dessert/2_gigerbread.webp"
+                    alt="Turkhis"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Giger bread</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="./img/menu/dessert/3_Grape_almond.webp"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/dessert/3_Grape_almond.webp"
+                    alt="Latte"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Grape Almond</h6>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="./img/menu/dessert/4_LemonMeringue.webp"
+                >
+                  <img
+                    class="img-thumbnail"
+                    width="100%"
+                    src="img/menu/dessert/4_LemonMeringue.webp"
+                    alt="Magic"
+                  />
+                </a>
+                <h6 class="fs-4 text-center">Lemon Meringue</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------- CONTACT ----------- -->
+    <section id="contact" class="py-5">
+      <div class="contact-header text-center text-white">
+        <h2 class="py-5">CONTACT</h2>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center row-gap-5">
+          <div class="col-12 col-lg-6 form-container">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Harvey"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="harvey@clarusway.com"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="İstanbul"
+                />
+              </div>
+              <div class="col-12 form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Enter your comments</label>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-lg-6 map-container">
+            <iframe
+              class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d96302.45451461109!2d29.034156435449216!3d41.03725009862413!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2str!4v1721935972605!5m2!1sen!2str"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------- Footer ------------ -->
+
+    <footer class="text-dark">
+      <div class="container">
+        <div class="row row-gap-3">
+          <div class="col-12 col-lg-4">
+            <p><em>where to find us</em></p>
+
+            <a href="" class="text-dark"
+              ><i class="bi bi-geo-alt-fill">İstanbul Üsküdar Sahili</i></a
+            >
+
+            <div class="social-icons fs-4 d-flex gap-5 mt-3">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-whatsapp"></i>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p><em>Contact</em></p>
+            <p><strong>Phone:</strong>555-555-55-55</p>
+            <p><strong>E-mail:</strong>Harveycoffe@clarusway.com</p>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <p><em>Opening Hours</em></p>
+            <p>Monday-Friday_______9:00 - 18:00</p>
+            <p>Sturday____________11:00 - 16:30</p>
+            <p>Sunday_____________Closed</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <p>Copyright &copy Harvey Watson</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="fslightbox.js"></script>
+  </body>
+</html>
